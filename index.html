@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- https://piyush6716721.github.io/repo/ -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>piyush</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+
+ <style>
+  
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+.pop{
+
+  height: 70px;
+  width: 60px;
+  border-radius: 30px;
+  
+  padding: 12px;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 70px;
+ background-image: radial-gradient(pink,white,purple);
+}
+
+ 
+
+
+ .img{
+  height: 500px;
+  width:340px;
+  background-color: #ffffff;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content:center;
+
+ }
+ 
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+} 
+
+ @media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
+ html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :#33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+} 
+ 
+@media only screen and (max-width: 768px) {
+   /* For mobile phones:  */
+   [class*="col-"] {
+    width: 100%;
+  }
+} 
+      @keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+.pop {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+}
+
+
+#study{
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+} 
+    </style>
+    <title>Piyush</title>
+  </head>
+  <body>
+<!-- <-----HTML-----> 
+<nav   class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">Brainy Badgers 👨‍🎓</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://piyush6716721.github.io/loginhwre/">Log in</a>
+        </li>
+    
+          
+        
+      
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<form action="https://piyush6716721.github.io/repo3/">
+<div class="pop">
+ <span  onclick="log()">login</span> 
+</div>
+</form>
+   
+     <div class=""></div>
+    <img class="img" src="https://codehelp.s3.ap-south-1.amazonaws.com/ggudduf7qmr7yvjwtcs1_cd7567153f.svg">
+    <!-- <img  class="jump" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2Fgwpz1kmonhq9a5mtftjo_341e23ef9d.png&w=1920&q=100">
+    <img   class="jump" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2Filemyrzwca73s36nuylo_af9797f807.png&w=1920&q=100">   
+     -->
+
+   
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+    
+      <div class="col-6 col-s-9">
+        <h1>Time to Study</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, qui?</p>
+        <img id="study" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2Fgwpz1kmonhq9a5mtftjo_341e23ef9d.png&w=1920&q=100">
+      </div>
+    
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>India is a city on the Dreams.</p>
+          <h2>Where?</h2>
+          <p>Crete is a Greek island in the Mediterranean Sea.</p>
+          <h2>How?</h2>
+          <p>You can reach India airport from all over Europe.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+ <script>
+  function log(){
+            location.replace("https://piyush6716721.github.io/loginhwre/")
+  }
+ </script>
+  </body>
+</html>
